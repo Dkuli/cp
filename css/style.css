@@ -24,14 +24,13 @@ body {
     background-color: var(--bluesoft);
     padding: 0;
     margin: 0;
-    
     background-color: #FFE6C9;
     animation: body 1s linear;
 }
 
 @keyframes body {
     to {
-        background-color: #E5AC62;
+        background-color: #ffc144;
     }
 }
 
@@ -266,11 +265,8 @@ body {
 }
 
 :root * {
-    /* Pause the animation */
     animation-play-state: paused;
-    /* Bind the animation to scroll */
     animation-delay: calc(var(--scroll) * -1s);
-    /* These last 2 properties clean up overshoot weirdness */
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
